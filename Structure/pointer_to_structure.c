@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+
+struct employee
+{
+    int code;
+    float salary;
+    char name[20];
+};
+
+int main()
+{
+    struct employee e1, *ptr;
+    ptr = &e1;
+    // (*ptr).code = 101;
+    // OR
+    ptr->code = 101;
+    printf("%d", e1.code);
+    return 0;
+}
